@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Статистика - Мой Сайт</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">МойСайт</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="profile.html">Личный кабинет</a></li>
+                <li><a href="messages.html">Сообщения</a></li>
+                <li><a href="stats.html">Статистика</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="stats">
+            <h1>Статистика сообщений</h1>
+            
+            <div class="stats-form">
+                <h2>Ввод статистики</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="sent">Всего отправлено сообщений:</label>
+                        <input type="number" id="sent" placeholder="0" min="0">
+                    </div>
+                    <div class="form-group">
+                        <label for="received">Всего принято сообщений:</label>
+                        <input type="number" id="received" placeholder="0" min="0">
+                    </div>
+                    <button type="submit" class="btn">Сохранить</button>
+                </form>
+            </div>
+
+            <div class="stats-display">
+                <h2>Текущая статистика</h2>
+                <div class="stat-card">
+                    <h3>Отправлено</h3>
+                    <p class="stat-number">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Получено</h3>
+                    <p class="stat-number">0</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
