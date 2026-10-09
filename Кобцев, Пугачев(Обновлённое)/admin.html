@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Админ-панель</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">🛠 Админ-панель</div>
+    <div class="nav-links">
+      <a href="profile.html">Профиль</a>
+      <a href="messages.html">Сообщения</a>
+      <a href="stats.html">Статистика</a>
+      <a href="admin.html" class="active">Админ</a>
+      <a href="index.html">Выход</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1 class="page-title">Панель администратора</h1>
+
+    <!-- 1. Сообщения за 24 часа -->
+    <div class="card">
+      <h2>Сообщения за последние 24 часа</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Время</th>
+              <th>Отправитель</th>
+              <th>Получатель</th>
+              <th>Сообщение</th>
+              <th>Действия</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>09:42</td>
+              <td>ivanov</td>
+              <td>petrov</td>
+              <td>Привет! Как дела?</td>
+              <td><button class="btn btn-small btn-secondary">Просмотр</button></td>
+            </tr>
+            <tr>
+              <td>09:38</td>
+              <td>sidorova</td>
+              <td>ivanov</td>
+              <td>Документы готовы</td>
+              <td><button class="btn btn-small btn-secondary">Просмотр</button></td>
+            </tr>
+            <tr>
+              <td>09:15</td>
+              <td>support</td>
+              <td>kuznetsov</td>
+              <td>Тикет #442 закрыт</td>
+              <td><button class="btn btn-small btn-secondary">Просмотр</button></td>
+            </tr>
+            <tr>
+              <td>08:57</td>
+              <td>petrov</td>
+              <td>ivanov</td>
+              <td>Встретимся завтра?</td>
+              <td><button class="btn btn-small btn-secondary">Просмотр</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 2. Активные сессии -->
+    <div class="card">
+      <h2>Активные сессии пользователей</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Пользователь</th>
+              <th>Роль</th>
+              <th>IP-адрес</th>
+              <th>Последняя активность</th>
+              <th>Статус</th>
+              <th>Действия</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ivanov</td>
+              <td><span class="badge badge-admin">admin</span></td>
+              <td>192.168.1.15</td>
+              <td>сейчас</td>
+              <td><span class="badge badge-online">● онлайн</span></td>
+              <td><button class="btn btn-small btn-danger">Завершить</button></td>
+            </tr>
+            <tr>
+              <td>petrov</td>
+              <td>user</td>
+              <td>192.168.1.22</td>
+              <td>2 мин назад</td>
+              <td><span class="badge badge-online">● онлайн</span></td>
+              <td><button class="btn btn-small btn-danger">Завершить</button></td>
+            </tr>
+            <tr>
+              <td>sidorova</td>
+              <td>user</td>
+              <td>192.168.1.47</td>
+              <td>1 час назад</td>
+              <td><span class="badge badge-offline">● офлайн</span></td>
+              <td><button class="btn btn-small btn-danger">Завершить</button></td>
+            </tr>
+            <tr>
+              <td>kuznetsov</td>
+              <td>user</td>
+              <td>192.168.1.88</td>
+              <td>3 часа назад</td>
+              <td><span class="badge badge-offline">● офлайн</span></td>
+              <td><button class="btn btn-small btn-danger">Завершить</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 3. Управление пользователями -->
+    <div class="card">
+      <h2>Управление пользователями</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>ФИО</th>
+              <th>Логин</th>
+              <th>Телефон</th>
+              <th>Действия</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>USR-00482917</td>
+              <td>Иванов И.И.</td>
+              <td>ivanov</td>
+              <td>+7 900 123-45-67</td>
+              <td>
+                <button class="btn btn-small btn-secondary">Редактировать</button>
+                <button class="btn btn-small btn-primary">Сменить пароль</button>
+              </td>
+            </tr>
+            <tr>
+              <td>USR-00482918</td>
+              <td>Петров П.П.</td>
+              <td>petrov</td>
+              <td>+7 900 234-56-78</td>
+              <td>
+                <button class="btn btn-small btn-secondary">Редактировать</button>
+                <button class="btn btn-small btn-primary">Сменить пароль</button>
+              </td>
+            </tr>
+            <tr>
+              <td>USR-00482919</td>
+              <td>Сидорова А.В.</td>
+              <td>sidorova</td>
+              <td>+7 900 345-67-89</td>
+              <td>
+                <button class="btn btn-small btn-secondary">Редактировать</button>
+                <button class="btn btn-small btn-primary">Сменить пароль</button>
+              </td>
+            </tr>
+            <tr>
+              <td>USR-00482920</td>
+              <td>Кузнецов Д.С.</td>
+              <td>kuznetsov</td>
+              <td>+7 900 456-78-90</td>
+              <td>
+                <button class="btn btn-small btn-secondary">Редактировать</button>
+                <button class="btn btn-small btn-primary">Сменить пароль</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Личный кабинет</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">📂 Личный кабинет</div>
+    <div class="nav-links">
+      <a href="profile.html" class="active">Профиль</a>
+      <a href="messages.html">Сообщения</a>
+      <a href="stats.html">Статистика</a>
+      <a href="admin.html">Админ</a>
+      <a href="index.html">Выход</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1 class="page-title">Мой профиль</h1>
+
+    <div class="grid-2">
+      <!-- Личные данные -->
+      <div class="card">
+        <h2>Личные данные</h2>
+        <form>
+          <div class="form-group">
+            <label>Уникальный ID</label>
+            <input type="text" value="USR-00482917" readonly style="background:#f9fafb;">
+          </div>
+          <div class="form-group">
+            <label>ФИО</label>
+            <input type="text" value="Иванов Иван Иванович">
+          </div>
+          <div class="form-group">
+            <label>Логин</label>
+            <input type="text" value="ivanov">
+          </div>
+          <div class="form-group">
+            <label>Номер телефона</label>
+            <input type="tel" value="+7 (900) 123-45-67">
+          </div>
+          <button type="submit" class="btn btn-primary">Сохранить</button>
+        </form>
+      </div>
+
+      <!-- Смена пароля -->
+      <div class="card">
+        <h2>Смена пароля</h2>
+        <form>
+          <div class="form-group">
+            <label>Текущий пароль</label>
+            <input type="password" placeholder="••••••••">
+          </div>
+          <div class="form-group">
+            <label>Новый пароль</label>
+            <input type="password" placeholder="Минимум 8 символов">
+          </div>
+          <div class="form-group">
+            <label>Повторите новый пароль</label>
+            <input type="password" placeholder="••••••••">
+          </div>
+          <button type="submit" class="btn btn-primary">Сменить пароль</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
